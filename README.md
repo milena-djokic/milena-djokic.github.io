@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Milena Djokic – CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: sans-serif;
-      background: #f9f9f9;
-    }
-    a.button {
-      display: inline-block;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: white;
-      background: #007acc;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: background 0.2s;
-    }
-    a.button:hover {
-      background: #005a99;
-    }
+    html, body { height: 100%; margin: 0; }
+    .wrap { height: 100vh; }
+    iframe { width: 100%; height: 100%; border: 0; }
+    .fallback { position: fixed; bottom: 12px; right: 12px; font: 14px sans-serif; }
   </style>
 </head>
 <body>
-  <a class="button" href="Milena_Djokic_CV_2025.pdf" target="_blank">📄 Open my CV</a>
+  <div class="wrap">
+    <!-- Load the PDF from jsDelivr (serves inline, scrollable, links clickable) -->
+    <iframe
+      src="https://cdn.jsdelivr.net/gh/milena-djokic/milena-djokic.github.io@main/Milena_Djokic_CV_2025.pdf"
+      allow="fullscreen"
+    ></iframe>
+  </div>
+
+  <!-- Optional fallback link -->
+  <div class="fallback">
+    <a href="https://cdn.jsdelivr.net/gh/milena-djokic/milena-djokic.github.io@main/Milena_Djokic_CV_2025.pdf" target="_blank" rel="noopener">
+      Open in a new tab
+    </a>
+  </div>
 </body>
 </html>
