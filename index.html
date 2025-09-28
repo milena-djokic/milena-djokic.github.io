@@ -1,30 +1,11 @@
----
-layout: null
----
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Milena Djokic – CV</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    /* kill margins and make the iframe fill the *actual* viewport */
-    html, body { margin: 0; height: 100%; overflow: hidden; }
-    #pdf {
-      position: fixed; /* ignore any theme/container height */
-      inset: 0;        /* top:0; right:0; bottom:0; left:0 */
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    /* Optional: better on mobile Safari */
-    @supports (height: 100svh) {
-      #pdf { height: 100svh; }
-    }
-  </style>
-</head>
-<body>
-  <iframe id="pdf" src="Milena_Djokic_CV_2025.pdf"></iframe>
-</body>
+<html>
+  <body style="margin:0; height:100vh">
+    <iframe 
+      src="Milena_Djokic_CV_2025.pdf" 
+      width="100%" 
+      height="100%" 
+      style="border:none;">
+    </iframe>
+  </body>
 </html>
